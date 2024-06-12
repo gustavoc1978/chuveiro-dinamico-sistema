@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Chuveiro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="control">
+            <label for="flowRange">Controle de Abertura da Torneira (%):</label>
+            <input type="range" id="flowRange" min="0" max="100" value="0">
+            <span id="flowValue">0%</span>
+        </div>
+        <div class="control">
+            <label for="tempRange">Controle de Temperatura (°C):</label>
+            <input type="range" id="tempRange" min="0" max="45" value="0">
+            <span id="tempValue">0°C</span>
+        </div>
+        <button id="saveConfigButton">Salvar Configuração</button>
+        <button id="childModeButton">Modo Infantil</button>
+        <button id="turnOffButton">Desligar Chuveiro</button>
+        <div class="shower" id="shower">
+            <div class="water" id="water"></div>
+        </div>
+        <div class="temperature-indicator" id="temperatureIndicator"></div>
+        <div class="temperature-time" id="temperatureTime">Tempo para atingir a temperatura ideal: 20s</div>
+        <div class="history" id="history"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
